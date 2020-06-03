@@ -27,7 +27,7 @@ body {
 }
 
 header {
-  margin: 30px 0px 120px 0px;
+  padding: 30px 0px 120px 0px;
 }
 
 .navigation {
@@ -188,14 +188,15 @@ header {
   padding: 0 122px;
 }
 
+.team-list__item {
+  width: 380px;
+}
+
 .team-list__item__wrapper {
   position: relative;
-  width: 380px;
-  height: 470px;
 }
 
 .team-list__item__wrapper img {
-  position: absolute;
   transition: all 200ms linear;
 }
 
@@ -233,7 +234,6 @@ header {
   position: absolute;
   top: 0;
   left: 0;
-  box-shadow: 10px 10px #95e1d3;
   opacity: 0;
   visibility: hidden;
   transition: all 200ms linear;
@@ -244,6 +244,7 @@ header {
 
 .team-list__item__wrapper:hover .overlay,
 .team-list__item__wrapper:hover img {
+  box-shadow: 10px 10px #95e1d3;
   opacity: 1;
   visibility: visible;
   transform: translate(-10px, -10px);
